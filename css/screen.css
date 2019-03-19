@@ -1,17 +1,14 @@
 /*------------------------------------*\
   #FONTS
 \*------------------------------------*/
-
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
-
 /*
     Generic: Page
     ---
     Global page styles
 */
-
 html {
     font-size: 16px;
     line-height: 1.5;
@@ -32,7 +29,6 @@ html {
  *
  * Customize the background color to match your design.
  */
-
 ::selection {
     background: #e85e00;
     color: white;
@@ -42,13 +38,11 @@ html {
 /*------------------------------------*\
   #Elements
 \*------------------------------------*/
-
 /*
     Elements: Images
     ---
     Default markup for images to make them responsive
 */
-
 img {
     max-width: 100%;
     vertical-align: top;
@@ -59,7 +53,6 @@ img {
     ---
     Default markup for typographic elements
 */
-
 h1 {
     font-family: "Times New Roman", serif;
     font-size: 36px;
@@ -161,19 +154,16 @@ a:focus {
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
-
 /*
     Object: Object name
     ---
     Object description
 */
-
 /*
     Objects: Row
     ---
     Creates a horizontal row that stretches the viewport and adds padding around children
 */
-
 .o-row {
     padding: 24px 24px 0;
     display: flex;
@@ -192,7 +182,7 @@ a:focus {
 
 @media (min-width: 768px) {
     .o-row--lg {
-        padding:  48px 48px 24px;
+        padding: 48px 48px 24px;
     }
 }
 
@@ -201,7 +191,6 @@ a:focus {
     ---
     Creates a horizontal container that sets de global max-width
 */
-
 .o-container {
     margin: 0 auto;
     max-width: 90em;
@@ -214,7 +203,6 @@ a:focus {
     contains the basic structural elements, but classes should be complemented
     with width utilities
 */
-
 .o-layout {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -222,17 +210,16 @@ a:focus {
     flex-wrap: wrap;
 }
 
-    .o-layout__item {
-        width: 100%;
-    }
+.o-layout__item {
+    width: 100%;
+}
 
 /* gutter modifiers, these affect o-layout__item too */
-
 .o-layout--gutter {
     margin: 0 -12px;
 }
 
-.o-layout--gutter > .o-layout__item {
+.o-layout--gutter>.o-layout__item {
     padding: 0 12px;
 }
 
@@ -240,7 +227,7 @@ a:focus {
     margin: 0 -6px;
 }
 
-.o-layout--gutter-sm > .o-layout__item {
+.o-layout--gutter-sm>.o-layout__item {
     padding: 0 6px;
 }
 
@@ -248,18 +235,16 @@ a:focus {
     margin: 0 -24px;
 }
 
-.o-layout--gutter-lg > .o-layout__item {
+.o-layout--gutter-lg>.o-layout__item {
     padding: 0 24px;
 }
 
 /* reverse horizontal row modifier */
-
 .o-layout--row-reverse {
     flex-direction: row-reverse;
 }
 
 /* Horizontal alignment modifiers*/
-
 .o-layout--justify-start {
     justify-content: flex-start;
 }
@@ -281,7 +266,6 @@ a:focus {
 }
 
 /* Vertical item alignment modifiers */
-
 .o-layout--align-start {
     align-items: flex-start;
 }
@@ -299,7 +283,6 @@ a:focus {
 }
 
 /* Vertical content alignment modifiers. Only work if there is one than one flex item */
-
 .o-layout--align-content-start {
     align-content: flex-start;
 }
@@ -308,30 +291,31 @@ a:focus {
     align-content: flex-end;
 }
 
-.o-layout--align-content-center {}
+.o-layout--align-content-center {
+    align-content: center;
+}
 
-.o-layout--align-content-space-around {}
+.o-layout--align-content-space-around {
+    align-content: space-around;
+}
 
-.o-layout--align-content-space-between {}
-
-
+.o-layout--align-content-space-between {
+    align-content: space-between;
+}
 
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
-
 /*
     Component: Component name
     ---
     Component description
 */
-
 /*
     Component: layout block
     ---
     A small component to demonstrate the layout items
 */
-
 .c-layout-block {
     background-color: LightGrey;
     padding: 8px 12px;
@@ -348,19 +332,16 @@ a:focus {
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
-
 /*
     Utility: Utility name
     ---
     Utility description
 */
-
 /*
     Utilities: max-width
     ---
     Utility classes to put specific max widths onto elements.
 */
-
 .u-max-width-sm {
     max-width: 36em !important;
 }
@@ -387,7 +368,6 @@ a:focus {
     Utility classes to put specific widths onto elements
     Will be mostly used on o-layout__item
 */
-
 .u-width-auto {
     width: auto;
 }
@@ -482,7 +462,6 @@ a:focus {
     }
 }
 
-
 @media (min-width: 768px) {
     .u-1-of-2-bp2 {
         width: 50%;
@@ -530,7 +509,6 @@ a:focus {
 }
 
 @media (min-width: 992px) {
-
     .u-1-of-2-bp3 {
         width: 50%;
     }
@@ -577,7 +555,6 @@ a:focus {
 }
 
 @media (min-width: 1200px) {
-
     .u-1-of-2-bp4 {
         width: 50%;
     }
@@ -626,7 +603,6 @@ a:focus {
 /*------------------------------------*\
   #MEDIA
 \*------------------------------------*/
-
 /*
     Media Queries
     ---
@@ -634,35 +610,29 @@ a:focus {
     These examples override the primary ('mobile first') styles.
     USE THEM INLINE!
 */
-
 /* Extra small devices (portrait phones, less than 576px)
    No media query since this is the default in mobile first design
 */
-
 /* Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
 */
-
 /* Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
 */
-
 /* Large devices (landscape tablets, desktops, 992px and up)
 @media (min-width: 992px) {}
 */
-
 /* Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {}
 */
-
 /*
     Print styles.
     ---
     Inlined to avoid the additional HTTP request:
     http://www.phpied.com/delay-loading-your-print-css/
 */
-
 @media print {
+
     *,
     *:before,
     *:after {
@@ -673,16 +643,20 @@ a:focus {
         box-shadow: none !important;
         text-shadow: none !important;
     }
+
     a,
     a:visited {
         text-decoration: underline;
     }
+
     a[href]:after {
-        content: " (" attr(href) ")";
+        content: " ("attr(href) ")";
     }
+
     abbr[title]:after {
-        content: " (" attr(title) ")";
+        content: " ("attr(title) ")";
     }
+
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -691,14 +665,17 @@ a:focus {
     a[href^="javascript:"]:after {
         content: "";
     }
+
     pre {
         white-space: pre-wrap !important;
     }
+
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
+
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -706,16 +683,19 @@ a:focus {
     thead {
         display: table-header-group;
     }
+
     tr,
     img {
         page-break-inside: avoid;
     }
+
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
+
     h2,
     h3 {
         page-break-after: avoid;
