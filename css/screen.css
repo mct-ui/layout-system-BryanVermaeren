@@ -206,10 +206,23 @@ a:focus {
 \*------------------------------------*/
 
 /*
-    Component: Component name
+    Component: layout block
     ---
-    Component description
+    A small component to demonstrate the layout items
 */
+
+.c-layout-block {
+    background-color: LightGrey;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.c-layout-block--ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
 /*------------------------------------*\
   #UTILITIES
@@ -224,12 +237,6 @@ a:focus {
 .u-max-width-sm {
     max-width: 36em;
 }
-
-/*
-    Utility: Utility name
-    ---
-    Utility description
-*/
 
 /*
     Utilities: max-width
@@ -255,6 +262,73 @@ a:focus {
 
 .u-max-width-none {
     max-width: none;
+}
+
+/*
+    Utility: Widths
+    ---
+    Utility classes to put specific widths onto elements
+    Will be mostly used on o-layout__item
+*/
+
+.u-width-auto {
+    width: auto;
+}
+
+.u-1-of-2 {
+    width: 50%;
+}
+
+.u-1-of-3 {
+    width: 33.3333333333%;
+}
+
+.u-2-of-3 {
+    width: 66.6666666667%;
+}
+
+.u-1-of-4 {
+    width: 25%;
+}
+
+.u-3-of-4 {
+    width: 75%;
+}
+
+.u-1-of-5 {
+    width: 20%;
+}
+
+.u-2-of-5 {
+    width: 40%;
+}
+
+.u-3-of-5 {}
+
+.u-4-of-5 {}
+
+.u-1-of-6 {
+    width: 16.6666666667%;
+}
+
+.u-5-of-6 {
+    width: 83.3333333333%;
+}
+
+@media (min-width: 576px) {
+    .u-1-of-2-bp1 {}
+}
+
+@media (min-width: 768px) {
+    .u-1-of-2-bp2 {}
+}
+
+@media (min-width: 992px) {
+    .u-1-of-2-bp3 {}
+}
+
+@media (min-width: 1200px) {
+    .u-1-of-2-bp4 {}
 }
 
 /*------------------------------------*\
